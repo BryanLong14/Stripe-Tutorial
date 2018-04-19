@@ -1,6 +1,6 @@
 # Stripe Tutorial
 
-(Live Site With Test Stripe Code)[https://quiet-coast-55853.herokuapp.com/]
+[Live Site With Test Stripe Code](https://quiet-coast-55853.herokuapp.com/)
 
 ### Running
 
