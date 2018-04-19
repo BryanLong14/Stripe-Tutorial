@@ -2,8 +2,8 @@
 
 ## Description of Tutorial and Technology Used
 
-* This is a Stripe API  Tutorial that shows developers how to integrate a credit card payment system into applications they are building
-* THis tutorial uses Node and Express
+* This Stripe API Tutorial shows developers how to integrate a credit card payment system into applications they are building
+* This tutorial uses Node and Express
 * The application is deployed to Heroku
 * This tutorial utilizes [Stripe Checkout](https://stripe.com/checkout), a simple payment form for Web and Mobile
 * This code uses Handlebars, but you could alternatively use React, Vue, or another frontend framework to componentize your application
@@ -21,7 +21,8 @@
   * Replace the API keys in keys_dev.js with your Stripe API keys (see explanation below)
 * `npm start` or `nodemon`
 
-## `This Looks great. How the heck do I actually build it?` Tutorial
+## Tutorial
+### `This Looks great. How the heck do I actually build it?`
 ### Open a Stripe Account
 * Go to [Stripe](www.stripe.com) and signup for a free account
     * Developers > API Keys
