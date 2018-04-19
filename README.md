@@ -24,6 +24,6 @@
 ## Tutorial
 ### `This Looks great. How the heck do I actually build it?`
 ### Open a Stripe Account
-* Go to [Stripe](www.stripe.com) and signup for a free account
+* Go to [Stripe](https://stripe.com/) and signup for a free account
     * Developers > API Keys
     * These are the keys you will add to your keys_dev.js file 
