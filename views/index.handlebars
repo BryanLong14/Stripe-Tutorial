@@ -1,24 +1,20 @@
 <section class="py-2">
-    <div class="row">
-        <div class="col-md-6 text-center">
-            <h1 class="display-4 mt-3 pt-5">
-                Purchase
-                <br>
-                <i>Can I Eat That?</i>
-                <br> Subscription
-            </h1>
-            <p class="lead">Unlock full Member Features.
-                <br>Activate your subscription for $10.00</p>
-            <form action="/charge" method="POST">
-                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{stripePublishableKey}}" data-amount="1000"
-                    data-name="Can I Eat That Subscription" data-description="Access to Can I Eat That App Features" data-image="/images/marketplace.png"
-                    data-locale="auto">
-                    </script>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <img src="/images/marketplace.png" class="img-fluid" alt="Can I Eat That Logo">
-        </div>
-
+    
+    <div class="text-center">
+        <img src="/images/marketplace.png" class="img-fluid mt-3" style="max-width: 30%" alt="Can I Eat That Logo">
+        <h1 class="display-4 mt-2">
+            Purchase
+            <br>
+            <i>Can I Eat That?</i>
+            <br> Subscription
+        </h1>
+        <p class="lead">Unlock full member features.
+            <br>Activate your subscription for $10.00</p>
+        <form action="/charge" method="POST">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{stripePublishableKey}}" data-amount="1000"
+                data-name="Can I Eat That Subscription" data-description="Access to Can I Eat That App Features" data-image="/images/marketplace.png"
+                data-locale="auto">
+                </script>
+        </form>
     </div>
 </section>
