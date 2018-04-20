@@ -71,7 +71,7 @@ See the annotated app.js file
 
 ## Author
 
-(Bryan Long) [https://github.com/bryanlong14]
+[Bryan Long](https://github.com/bryanlong14)
 
 ## License
 
