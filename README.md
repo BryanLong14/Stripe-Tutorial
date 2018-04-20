@@ -37,14 +37,14 @@
 
 ### Key Code Components 
 #### HTML Form
-* Using [Stripe Checkout](https://stripe.com/checkout), here is the form code I used. See index.handlebars for the full page's code.
+* Using [Stripe Checkout](https://stripe.com/checkout), below is the form code I used. See the index.handlebars file for the full page's code.
 * Notice that inputs don’t have a name attribute because personal credit card info does not hit your server.
 * Inputs on form have a “data" attributes, which Stipe.js sends to its server, adds a hidden input “Token” and then posts the Token to your server. 
 * Stripe stores credit card info on their server so you only receive the Token, which you can use to process payment via the Stripe server. This means you don't have to deal with the security of handling people's credit cards.   
 `<form action="/charge" method="POST">
             <script 
             src="https://checkout.stripe.com/checkout.js" 
-            class="stripe-button" data-key="{{stripePublishableKey}}" 
+            class="stripe-button" data-key="{{stripePublishableKey}}" <br>
             data-amount="1000"
             data-name="Can I Eat That Subscription" 
             data-description="Access to Can I Eat That App Features" 
