@@ -20,7 +20,7 @@
 
 * Fork & Clone This Repo
 * `npm install`
-* `cp keys_dev.example.js keys_dev.js`
+* `cp config/keys_dev.example.js config/keys_dev.js`
   * Register on Stripe.com
   * Replace the API keys in keys_dev.js with your Stripe API keys (see explanation below)
 * `npm start` or `nodemon`
@@ -46,23 +46,25 @@
 
 ```javascript
 <form action="/charge" method="POST">
-    <script
-        src="https://checkout.stripe.com/checkout.js"
-        class="stripe-button" data-key="{{stripePublishableKey}}" 
-        data-amount="1000"
-        data-name="Can I Eat That Subscription"
-        data-description="Access to Can I Eat That App Features"
-        data-image="/images/marketplace.png"
-        data-locale="auto">
-    </script>
-</form>;
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="{{stripePublishableKey}}"
+    data-amount="1000"
+    data-name="Can I Eat That Subscription"
+    data-description="Access to Can I Eat That App Features"
+    data-image="/images/marketplace.png"
+    data-locale="auto"
+  />
+</form>
 ```
 
 #### Server-Side Code
+
 See the annotated app.js file
 
 #### Heroku
+
 * Push your app to Heroku
 * Save your Stripe Keys in Heroku as Config Variables. See Screenshot below to see where you can add your config variables:
-![Config Variables](/public/images/HerokuConfigVars.jpg)
-````
+  ![Config Variables](/public/images/HerokuConfigVars.jpg)
