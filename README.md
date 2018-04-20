@@ -24,7 +24,7 @@
 * `npm start` or `nodemon`
 
 
-### `This Looks great. How the heck do _I_ actually build it?`
+## `This Looks great. How the heck do I actually build it?`
 ## Tutorial
 
 ### Open a Stripe Account and get your API Keys
