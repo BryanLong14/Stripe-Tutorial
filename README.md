@@ -46,15 +46,17 @@
 
 ````<form action="/charge" method="POST">
             <script
-            src="https://checkout.stripe.com/checkout.js"
-            class="stripe-button" data-key="{{stripePublishableKey}}" <br>
-            data-amount="1000"
-            data-name="Can I Eat That Subscription"
-            data-description="Access to Can I Eat That App Features"
-            data-image="/images/marketplace.png"
-            data-locale="auto">
+                src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button" data-key="{{stripePublishableKey}}" <br>
+                data-amount="1000"
+                data-name="Can I Eat That Subscription"
+                data-description="Access to Can I Eat That App Features"
+                data-image="/images/marketplace.png"
+                data-locale="auto">
             </script>
-        </form>```
+        </form>;
+        ```
+
 #### Server Side Code
 
 #### Heroku
