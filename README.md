@@ -10,6 +10,7 @@
 * This code uses Handlebars, but you could alternatively use React, Vue, or another frontend framework
 
 ## Live Site
+![Live Site Demo Code](<https://github.com/BryanLong14/Stripe-Tutorial/blob/master/public/images/Tutorial.gif>)
 
 * I made this tutorial for a Mobile App I recently build called [_Can I Eat That?_](https://github.com/BryanLong14/Can-I-Eat-That-Frontend-Capstone-Project)
 * Check out the [live site utilizing Stripe's Test Code](https://quiet-coast-55853.herokuapp.com/)
