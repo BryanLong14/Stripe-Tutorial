@@ -68,3 +68,11 @@ See the annotated app.js file
 * Push your app to Heroku
 * Save your Stripe Keys in Heroku as Config Variables. See Screenshot below to see where you can add your config variables:
   ![Config Variables](/public/images/HerokuConfigVars.jpg)
+
+## Author
+
+(Bryan Long) [https://github.com/bryanlong14]
+
+## License
+
+MIT
