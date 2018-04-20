@@ -37,7 +37,7 @@
 
 ### Key Code Components
 
-#### HTML Form
+#### Client-Side Code With HTML Form
 
 * Using [Stripe Checkout](https://stripe.com/checkout), below is the form code I used. See the index.handlebars file for the full page's code.
 * Notice that inputs don’t have a name attribute because personal credit card info does not hit your server.
@@ -58,10 +58,11 @@
 </form>;
 ```
 
-#### Server Side Code
+#### Server-Side Code
+See the annotated app.js file
 
 #### Heroku
 * Push your app to Heroku
-* Save your Stripe Keys in Heroku as Config Variables. See Screenshot to see where you set config variables:
+* Save your Stripe Keys in Heroku as Config Variables. See Screenshot below to see where you can add your config variables:
 ![Config Variables](/public/images/HerokuConfigVars.jpg)
 ````
