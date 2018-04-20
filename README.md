@@ -37,8 +37,25 @@
 
 ### Key Code Components 
 #### HTML Form
+* Using [Stripe Checkout](https://stripe.com/checkout), here is the form code I used. See index.handlebars for the full page's code.
+* Notice that inputs don’t have a name attribute because personal credit card info does not hit your server.
+* Inputs on form have a “data" attributes, which Stipe.js sends to its server, adds a hidden input “Token” and then posts the Token to your server. 
+* Stripe stores credit card info on their server so you only receive the Token, which you can use to process payment via the Stripe server. This means you don't have to deal with the security of handling people's credit cards.   
+`<form action="/charge" method="POST">
+            <script 
+            src="https://checkout.stripe.com/checkout.js" 
+            class="stripe-button" data-key="{{stripePublishableKey}}" 
+            data-amount="1000"
+            data-name="Can I Eat That Subscription" 
+            data-description="Access to Can I Eat That App Features" 
+            data-image="/images/marketplace.png"
+            data-locale="auto">
+            </script>
+        </form>`
 #### Server Side Code
+
 #### Heroku
-Make sure you save your Stripe Keys to Heroku as Config Variables. See Screenshot
+* Push your app to Heroku
+* Save your Stripe Keys in Heroku as Config Variables. See Screenshot to see where you set config variables:
 ![Config Variables](/public/images/HerokuConfigVars.jpg)
 
