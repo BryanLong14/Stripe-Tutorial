@@ -5,7 +5,7 @@
 ![Live Site Demo Code](https://github.com/BryanLong14/Stripe-Tutorial/blob/master/public/images/Tutorial.gif)
 
 * I made this tutorial for a Mobile App I recently build called _Can I Eat That?_
-* Check out the [live site utilizing Stripe's Test Code](https://quiet-coast-55853.herokuapp.com/)
+* Check out the live credt card payment [site utilizing Stripe's Test Mode](https://quiet-coast-55853.herokuapp.com/)
 
 ## Description of Tutorial and Technology Used
 
@@ -13,7 +13,7 @@
 * This tutorial uses Node and Express
 * The application is deployed to Heroku
 * This tutorial utilizes [Stripe Checkout](https://stripe.com/checkout), a simple payment form for Web and Mobile apps
-* Link to the exhaustive [Stripe API Docs](https://stripe.com/docs/api)
+* Here is a link to the exhaustive [Stripe API Docs](https://stripe.com/docs/api)
 * This code uses Handlebars, but you could alternatively use React, Vue, or another frontend framework
 
 ## Downloading and Running This Code
@@ -39,10 +39,10 @@
 
 #### Client-Side Code With HTML Form
 
-* Using [Stripe Checkout](https://stripe.com/checkout), below is the form code I used. See the index.handlebars file for the full page's code.
+* Using [Stripe Checkout](https://stripe.com/checkout), below is the code I used to create the `form`. See the index.handlebars file for the full page's code.
 * Notice that inputs don’t have a name attribute because personal credit card info does not hit your server.
-* Inputs on form have a “data" attributes, which Stipe.js sends to its server, adds a hidden input “Token” and then posts the Token to your server.
-* Stripe stores credit card info on their server so you only receive the Token, which you can use to process payment via the Stripe server. This means you don't have to deal with the security of handling people's credit cards.
+* Inputs on form have a “data" attributes, which Stipe.js sends to its server, adds a hidden input “Token”, and then posts that Token to your server.
+* Stripe stores credit card info on their server so you only receive the Token, which you can use to process payment via the Stripe server. This means you don't have to deal with the security of handling people's credit card info.
 
 ```javascript
 <form action="/charge" method="POST">
